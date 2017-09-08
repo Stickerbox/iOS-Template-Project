@@ -25,7 +25,7 @@ class MainViewController: UIViewController {
     
     private func bindView() {
         
-        viewModel.progressText.observeAndEmit { [weak self] in self?.progressLabel.text = $0 }
+        viewModel.progressText.observe { [weak self] in self?.progressLabel.text = $0 }
         viewModel.users.observe { [weak self] in self?.tableViewData = $0 }
     }
 

@@ -5,21 +5,18 @@
 import Foundation
 
 class Observable<T> {
-    typealias Listener = (T) -> ()
-    var listener: Listener?
     
-    func observe(_ listener: Listener?) {
-        self.listener = listener
-    }
+    typealias Observer = (T) -> Void
+    var observer: Observer?
     
-    func observeAndEmit(_ listener: Listener?) {
-        self.listener = listener
-        listener?(value)
+    func observe(_ observer: Observer?) {
+        self.observer = observer
+        observer?(value)
     }
     
     var value: T {
         didSet {
-            listener?(value)
+            observer?(value)
         }
     }
     
