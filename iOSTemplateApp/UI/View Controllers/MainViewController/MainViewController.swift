@@ -6,7 +6,7 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    lazy var viewModel = MainViewModel()
+    var viewModel: MainViewModel!
     
     var tableViewData: [User]? {
         didSet {
