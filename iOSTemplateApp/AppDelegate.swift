@@ -10,12 +10,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var appCoordinator: AppCoordinator!
+    var tabBarController: UITabBarController!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.appCoordinator = AppCoordinator(window: self.window!)
-        self.appCoordinator.start()
+        window = UIWindow()
+        
+        tabBarController = UITabBarController()
+        window?.rootViewController = tabBarController
+        
+        appCoordinator = AppCoordinator(tabBarController: tabBarController, tabs: [deGenericize(MainTabCoordinator())])
+        appCoordinator.start()
+        
+        window?.makeKeyAndVisible()
         
         return true
     }
