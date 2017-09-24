@@ -17,5 +17,14 @@ class MainTabCoordinator: TabCoordinator {
         
         rootController = UINavigationController(rootViewController: main)
         rootController.tabBarItem = tabBarItem
+        
+        main.finishedBlock = {
+            self.showSecondViewController()
+        }
+    }
+    
+    func showSecondViewController() {
+        guard let secondVC = storyboard?.instantiateViewController(withIdentifier: .secondViewController) as? SecondViewController else { return }
+        self.rootController.pushViewController(secondVC, animated: true)
     }
 }

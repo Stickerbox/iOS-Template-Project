@@ -26,6 +26,10 @@
 		9CC932C81F77D4F4004254E6 /* Storyboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC932C71F77D4F4004254E6 /* Storyboard+Extensions.swift */; };
 		9CC932CB1F77DC5F004254E6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC932CA1F77DC5F004254E6 /* SecondViewController.swift */; };
 		9CC9330F1F7813C8004254E6 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC9330E1F7813C8004254E6 /* TabCoordinator.swift */; };
+		9CC933121F781A77004254E6 /* Purchase.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CC933111F781A77004254E6 /* Purchase.storyboard */; };
+		9CC933151F781A9D004254E6 /* SelectItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC933141F781A9D004254E6 /* SelectItemViewModel.swift */; };
+		9CC933171F781AA4004254E6 /* SelectItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC933161F781AA4004254E6 /* SelectItemViewController.swift */; };
+		9CC933191F781ADE004254E6 /* PurchaseTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC933181F781ADE004254E6 /* PurchaseTabCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +75,10 @@
 		9CC932C71F77D4F4004254E6 /* Storyboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extensions.swift"; sourceTree = "<group>"; };
 		9CC932CA1F77DC5F004254E6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9CC9330E1F7813C8004254E6 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		9CC933111F781A77004254E6 /* Purchase.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Purchase.storyboard; sourceTree = "<group>"; };
+		9CC933141F781A9D004254E6 /* SelectItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectItemViewModel.swift; sourceTree = "<group>"; };
+		9CC933161F781AA4004254E6 /* SelectItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectItemViewController.swift; sourceTree = "<group>"; };
+		9CC933181F781ADE004254E6 /* PurchaseTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTabCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +211,7 @@
 		9C6B5FB91F62F5050059EB36 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9CC933101F781915004254E6 /* PurchaseFlow */,
 				9CC932CC1F77DF41004254E6 /* MainFlow */,
 			);
 			path = "View Controllers";
@@ -213,6 +222,7 @@
 			children = (
 				9C6B5F841F62F4980059EB36 /* Main.storyboard */,
 				9C6B5F8C1F62F4980059EB36 /* LaunchScreen.storyboard */,
+				9CC933111F781A77004254E6 /* Purchase.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -271,6 +281,24 @@
 				9CC932C91F77DC50004254E6 /* SecondViewController */,
 			);
 			path = MainFlow;
+			sourceTree = "<group>";
+		};
+		9CC933101F781915004254E6 /* PurchaseFlow */ = {
+			isa = PBXGroup;
+			children = (
+				9CC933181F781ADE004254E6 /* PurchaseTabCoordinator.swift */,
+				9CC933131F781A85004254E6 /* SelectItemViewController */,
+			);
+			path = PurchaseFlow;
+			sourceTree = "<group>";
+		};
+		9CC933131F781A85004254E6 /* SelectItemViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9CC933141F781A9D004254E6 /* SelectItemViewModel.swift */,
+				9CC933161F781AA4004254E6 /* SelectItemViewController.swift */,
+			);
+			path = SelectItemViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C6B5F8E1F62F4980059EB36 /* LaunchScreen.storyboard in Resources */,
+				9CC933121F781A77004254E6 /* Purchase.storyboard in Resources */,
 				9C6B5F8B1F62F4980059EB36 /* Assets.xcassets in Resources */,
 				9C6B5F861F62F4980059EB36 /* Main.storyboard in Resources */,
 			);
@@ -411,11 +440,14 @@
 				9CC932CB1F77DC5F004254E6 /* SecondViewController.swift in Sources */,
 				9C6B5F831F62F4980059EB36 /* MainViewController.swift in Sources */,
 				9CC932C81F77D4F4004254E6 /* Storyboard+Extensions.swift in Sources */,
+				9CC933171F781AA4004254E6 /* SelectItemViewController.swift in Sources */,
 				9C6B5F811F62F4980059EB36 /* AppDelegate.swift in Sources */,
 				9CC9330F1F7813C8004254E6 /* TabCoordinator.swift in Sources */,
 				9CC932C41F77D12D004254E6 /* CoordinatorProtocol.swift in Sources */,
+				9CC933151F781A9D004254E6 /* SelectItemViewModel.swift in Sources */,
 				9CC932BF1F77CEAC004254E6 /* MainTabCoordinator.swift in Sources */,
 				9C70D79E1F62F57C00FD788C /* MainViewModel.swift in Sources */,
+				9CC933191F781ADE004254E6 /* PurchaseTabCoordinator.swift in Sources */,
 				9C70D7A71F62F97A00FD788C /* ExampleGetConfiguration.swift in Sources */,
 				9C70D7A01F62F5C800FD788C /* Observable.swift in Sources */,
 			);
