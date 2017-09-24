@@ -4,7 +4,15 @@
 
 import Foundation
 
-class MainViewModel {
+protocol MainViewModelConformable {
+    var users: Observable<[User]?> { get }
+    var progressText: Observable<String> { get }
+    
+    func getUser()
+    func getBadUsers()
+}
+
+class MainViewModel: MainViewModelConformable {
     
     let users = Observable<[User]?>(nil)
     let progressText = Observable<String>("Tap the button to start")

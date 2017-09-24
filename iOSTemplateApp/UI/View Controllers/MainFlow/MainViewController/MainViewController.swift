@@ -6,7 +6,7 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    var viewModel: MainViewModel!
+    var viewModel: MainViewModelConformable!
     var finishedBlock: (() -> Void)?
     
     var tableViewData: [User]? {
