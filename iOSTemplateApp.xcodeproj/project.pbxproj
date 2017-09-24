@@ -203,8 +203,7 @@
 		9C6B5FB91F62F5050059EB36 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9CC932C91F77DC50004254E6 /* SecondViewController */,
-				9C6B5FBB1F62F51F0059EB36 /* MainViewController */,
+				9CC932CC1F77DF41004254E6 /* MainFlow */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -223,7 +222,6 @@
 			children = (
 				9C6B5F821F62F4980059EB36 /* MainViewController.swift */,
 				9C70D79D1F62F57C00FD788C /* MainViewModel.swift */,
-				9CC932BE1F77CEAC004254E6 /* MainFlowCoordinator.swift */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -263,6 +261,16 @@
 				9CC932CA1F77DC5F004254E6 /* SecondViewController.swift */,
 			);
 			path = SecondViewController;
+			sourceTree = "<group>";
+		};
+		9CC932CC1F77DF41004254E6 /* MainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				9CC932BE1F77CEAC004254E6 /* MainFlowCoordinator.swift */,
+				9C6B5FBB1F62F51F0059EB36 /* MainViewController */,
+				9CC932C91F77DC50004254E6 /* SecondViewController */,
+			);
+			path = MainFlow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
