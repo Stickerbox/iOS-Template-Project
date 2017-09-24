@@ -8,8 +8,9 @@ enum Storyboard: String {
     case main = "Main"
 }
 
-enum StoryboardViewController: String {
+enum MainStoryboardViewController: String {
     case mainViewController = "MainViewController"
+    case secondViewController = "SecondViewController"
 }
 
 extension UIStoryboard {
@@ -18,7 +19,7 @@ extension UIStoryboard {
         self.init(name: name.rawValue, bundle: nil)
     }
     
-    func instantiateViewController(withIdentifier identifier: StoryboardViewController) -> UIViewController? {
+    func instantiateViewController(withIdentifier identifier: MainStoryboardViewController) -> UIViewController? {
         return self.instantiateViewController(withIdentifier: identifier.rawValue)
     }
     

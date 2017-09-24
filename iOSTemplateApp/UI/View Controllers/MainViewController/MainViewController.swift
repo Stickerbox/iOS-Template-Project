@@ -7,6 +7,7 @@ import UIKit
 class MainViewController: UIViewController {
     
     var viewModel: MainViewModel!
+    var finishedBlock: (() -> Void)?
     
     var tableViewData: [User]? {
         didSet {
@@ -55,6 +56,10 @@ extension MainViewController {
     
     @IBAction func getBadUsers() {
         viewModel.getBadUsers()
+    }
+    
+    @IBAction func segue() {
+        finishedBlock?()
     }
 }
 

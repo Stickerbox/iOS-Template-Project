@@ -25,6 +25,7 @@
 		9CC932C41F77D12D004254E6 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC932C31F77D12D004254E6 /* CoordinatorProtocol.swift */; };
 		9CC932C61F77D14F004254E6 /* RootViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC932C51F77D14F004254E6 /* RootViewCoordinator.swift */; };
 		9CC932C81F77D4F4004254E6 /* Storyboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC932C71F77D4F4004254E6 /* Storyboard+Extensions.swift */; };
+		9CC932CB1F77DC5F004254E6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC932CA1F77DC5F004254E6 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		9CC932C31F77D12D004254E6 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		9CC932C51F77D14F004254E6 /* RootViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewCoordinator.swift; sourceTree = "<group>"; };
 		9CC932C71F77D4F4004254E6 /* Storyboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Storyboard+Extensions.swift"; sourceTree = "<group>"; };
+		9CC932CA1F77DC5F004254E6 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +126,6 @@
 				9C6B5FBC1F62F52E0059EB36 /* Utils */,
 				9C6B5F801F62F4980059EB36 /* AppDelegate.swift */,
 				9C70D7A51F62F70200FD788C /* Info.plist */,
-				9CC932C01F77D0F9004254E6 /* AppCoordinator.swift */,
 			);
 			path = iOSTemplateApp;
 			sourceTree = "<group>";
@@ -202,6 +203,7 @@
 		9C6B5FB91F62F5050059EB36 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9CC932C91F77DC50004254E6 /* SecondViewController */,
 				9C6B5FBB1F62F51F0059EB36 /* MainViewController */,
 			);
 			path = "View Controllers";
@@ -250,8 +252,17 @@
 				9CC932C31F77D12D004254E6 /* CoordinatorProtocol.swift */,
 				9CC932C51F77D14F004254E6 /* RootViewCoordinator.swift */,
 				9CC932C71F77D4F4004254E6 /* Storyboard+Extensions.swift */,
+				9CC932C01F77D0F9004254E6 /* AppCoordinator.swift */,
 			);
 			path = Coodinator;
+			sourceTree = "<group>";
+		};
+		9CC932C91F77DC50004254E6 /* SecondViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9CC932CA1F77DC5F004254E6 /* SecondViewController.swift */,
+			);
+			path = SecondViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -389,6 +400,7 @@
 				9C70D7AC1F62FE3E00FD788C /* MainTableViewCell.swift in Sources */,
 				9CC932C11F77D0F9004254E6 /* AppCoordinator.swift in Sources */,
 				9C70D7A81F62FA1500FD788C /* WebServiceConfiguration.swift in Sources */,
+				9CC932CB1F77DC5F004254E6 /* SecondViewController.swift in Sources */,
 				9C6B5F831F62F4980059EB36 /* MainViewController.swift in Sources */,
 				9CC932C81F77D4F4004254E6 /* Storyboard+Extensions.swift in Sources */,
 				9C6B5F811F62F4980059EB36 /* AppDelegate.swift in Sources */,
