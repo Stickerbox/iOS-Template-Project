@@ -8,6 +8,7 @@ protocol TabCoordinator {
     associatedtype RootType: UIViewController
     var rootController: RootType { get }
     var tabBarItem: UITabBarItem { get }
+    var storyboard: UIStoryboard { get }
 }
 
 class AnyTabCoordinator {

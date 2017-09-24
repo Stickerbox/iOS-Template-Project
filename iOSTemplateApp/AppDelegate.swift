@@ -19,7 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         tabBarController = UITabBarController()
         window?.rootViewController = tabBarController
         
-        appCoordinator = AppCoordinator(tabBarController: tabBarController, tabs: [deGenericize(MainTabCoordinator()), deGenericize(PurchaseTabCoordinator())])
+        let tabs = [deGenericize(MainTabCoordinator()),
+                    deGenericize(PurchaseTabCoordinator())]
+        
+        appCoordinator = AppCoordinator(tabBarController: tabBarController, tabs: tabs)
         appCoordinator.start()
         
         window?.makeKeyAndVisible()

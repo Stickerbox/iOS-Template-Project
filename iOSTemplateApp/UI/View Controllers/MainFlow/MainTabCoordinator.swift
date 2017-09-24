@@ -6,13 +6,13 @@ import UIKit
 
 class MainTabCoordinator: TabCoordinator {
     
-    let storyboard: UIStoryboard? = UIStoryboard(.main)
+    let storyboard = UIStoryboard(.main)
     
     var rootController: UINavigationController
     var tabBarItem: UITabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
     
     init() {
-        let main = storyboard?.instantiateViewController(withIdentifier: .mainViewController) as! MainViewController
+        let main = storyboard.instantiateViewController(withIdentifier: .mainViewController) as! MainViewController
         main.viewModel = MainViewModel()
         
         rootController = UINavigationController(rootViewController: main)
@@ -24,7 +24,7 @@ class MainTabCoordinator: TabCoordinator {
     }
     
     func showSecondViewController() {
-        guard let secondVC = storyboard?.instantiateViewController(withIdentifier: .secondViewController) as? SecondViewController else { return }
+        guard let secondVC = storyboard.instantiateViewController(withIdentifier: .secondViewController) as? SecondViewController else { return }
         self.rootController.pushViewController(secondVC, animated: true)
     }
 }
