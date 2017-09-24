@@ -22,7 +22,7 @@ class AppCoordinator: RootViewCoordinator {
         navigationController.isNavigationBarHidden = true
         return navigationController
     }()
-    
+
     // MARK: - Init
     
     public init(window: UIWindow) {
@@ -36,14 +36,14 @@ class AppCoordinator: RootViewCoordinator {
     
     /// Starts the coordinator
     public func start() {
-        self.startMainFlow()
+        self.startInitialFlow()
     }
     
     /// Creates a new MainFlowCoordinator and places its rootViewController into the navigation controller
-    private func startMainFlow() {
-        let mainFlowCoordinator = MainFlowCoordinator()
-        mainFlowCoordinator.start()
-        self.addChildCoordinator(mainFlowCoordinator)
-        self.rootViewController.present(mainFlowCoordinator.rootViewController, animated: true, completion: nil)
+    private func startInitialFlow() {
+        let initialFlowCoordinator = MainFlowCoordinator()
+        initialFlowCoordinator.start()
+        self.addChildCoordinator(initialFlowCoordinator)
+        self.rootViewController.present(initialFlowCoordinator.rootViewController, animated: true, completion: nil)
     }
 }
