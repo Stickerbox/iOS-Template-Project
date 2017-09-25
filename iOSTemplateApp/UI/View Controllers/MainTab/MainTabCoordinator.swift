@@ -14,7 +14,7 @@ class MainTabCoordinator: RootTabCoordinator {
     var tabBarItem: UITabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
     
     init() {
-        let main = storyboard.instantiateViewController(withIdentifier: .mainViewController) as! MainViewController
+        let main: MainViewController = storyboard.instantiate()
         main.viewModel = MainViewModel()
         
         rootController = UINavigationController(rootViewController: main)
@@ -26,7 +26,7 @@ class MainTabCoordinator: RootTabCoordinator {
     }
     
     func showSecondViewController() {
-        guard let secondVC = storyboard.instantiateViewController(withIdentifier: .secondViewController) as? SecondViewController else { return }
+        let secondVC: SecondViewController = storyboard.instantiate()
         self.rootController.pushViewController(secondVC, animated: true)
     }
 }
