@@ -26,7 +26,7 @@ class MainTabCoordinator: RootTabCoordinator {
     }
 }
 
-// MARK:
+// MARK: View Controller inflation extensions
 extension MainTabCoordinator {
     
     func showSecondViewController() {
