@@ -11,6 +11,12 @@ protocol TabCoordinator {
     var storyboard: UIStoryboard { get }
 }
 
+extension TabCoordinator {
+    var deGenerisized: AnyTabCoordinator {
+        return AnyTabCoordinator(self)
+    }
+}
+
 class AnyTabCoordinator {
     var rootController: UIViewController
     var tabBarItem: UITabBarItem
@@ -19,8 +25,4 @@ class AnyTabCoordinator {
         rootController = tabCoordinator.rootController
         tabBarItem = tabCoordinator.tabBarItem
     }
-}
-
-func deGenericize<T: TabCoordinator>(_ coordinator: T) -> AnyTabCoordinator {
-    return AnyTabCoordinator(coordinator)
 }

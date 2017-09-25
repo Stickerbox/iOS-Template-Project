@@ -11,8 +11,12 @@ class AppCoordinator {
 
     // MARK: - Init
     
-    public init(tabBarController: UITabBarController, tabs: [AnyTabCoordinator]) {
+    public init(tabBarController: UITabBarController) {
         self.tabBarController = tabBarController
+        
+        let tabs = [MainTabCoordinator().deGenerisized,
+                    PurchaseTabCoordinator().deGenerisized]
+        
         self.tabs = tabs
     }
     
