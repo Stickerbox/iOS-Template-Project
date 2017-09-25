@@ -14,7 +14,7 @@ class PurchaseTabCoordinator: RootTabCoordinator {
     var tabBarItem: UITabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
     
     init() {
-        let selectViewController: SelectItemViewController = storyboard.inflate()
+        let selectViewController: SelectItemViewController = storyboard.inflateVC()
         selectViewController.viewModel = SelectItemViewModel()
         
         rootController = UINavigationController(rootViewController: selectViewController)
