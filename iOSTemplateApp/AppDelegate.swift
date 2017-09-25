@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         
-        appCoordinator = AppCoordinator(window: window, tabBarController: UITabBarController())
+        appCoordinator = AppCoordinator(window: window)
         appCoordinator.start()
         
         return true

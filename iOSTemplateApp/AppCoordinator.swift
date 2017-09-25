@@ -10,10 +10,8 @@ class AppCoordinator {
     var tabs: [AnyTabCoordinator]
     var window: UIWindow?
     
-    // MARK: - Init
-    
-    public init(window: UIWindow?, tabBarController: UITabBarController) {
-        self.tabBarController = tabBarController
+    public init(window: UIWindow?) {
+        self.tabBarController = UITabBarController()
         self.window = window
         
         window?.rootViewController = tabBarController
@@ -24,9 +22,6 @@ class AppCoordinator {
         self.tabs = tabs
     }
     
-    // MARK: - Functions
-    
-    /// Starts the coordinator
     public func start() {
         tabBarController.viewControllers = tabs.map { $0.rootController }
         window?.makeKeyAndVisible()

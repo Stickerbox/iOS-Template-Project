@@ -133,6 +133,7 @@
 				9C6B5FB71F62F4FB0059EB36 /* UI */,
 				9C6B5FBC1F62F52E0059EB36 /* Utils */,
 				9C6B5F801F62F4980059EB36 /* AppDelegate.swift */,
+				9CC932C01F77D0F9004254E6 /* AppCoordinator.swift */,
 				9C70D7A51F62F70200FD788C /* Info.plist */,
 			);
 			path = iOSTemplateApp;
@@ -194,8 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				9C6B5FB81F62F4FF0059EB36 /* Views */,
-				9C6B5FB91F62F5050059EB36 /* View Controllers */,
-				9C6B5FBA1F62F5090059EB36 /* Storyboards */,
+				9C6B5FB91F62F5050059EB36 /* Tabs */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -208,23 +208,13 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		9C6B5FB91F62F5050059EB36 /* View Controllers */ = {
+		9C6B5FB91F62F5050059EB36 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				9CC933101F781915004254E6 /* PurchaseTab */,
 				9CC932CC1F77DF41004254E6 /* MainTab */,
+				9CC933101F781915004254E6 /* PurchaseTab */,
 			);
-			path = "View Controllers";
-			sourceTree = "<group>";
-		};
-		9C6B5FBA1F62F5090059EB36 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				9C6B5F841F62F4980059EB36 /* Main.storyboard */,
-				9C6B5F8C1F62F4980059EB36 /* LaunchScreen.storyboard */,
-				9CC933111F781A77004254E6 /* Purchase.storyboard */,
-			);
-			path = Storyboards;
+			path = Tabs;
 			sourceTree = "<group>";
 		};
 		9C6B5FBB1F62F51F0059EB36 /* MainViewController */ = {
@@ -242,6 +232,7 @@
 				9CC932C21F77D11C004254E6 /* Coodinator */,
 				9C6B5F8A1F62F4980059EB36 /* Assets.xcassets */,
 				9C70D79F1F62F5C800FD788C /* Observable.swift */,
+				9C6B5F8C1F62F4980059EB36 /* LaunchScreen.storyboard */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -259,7 +250,6 @@
 			children = (
 				9CC932C31F77D12D004254E6 /* CoordinatorProtocol.swift */,
 				9CC932C71F77D4F4004254E6 /* Storyboard+Extensions.swift */,
-				9CC932C01F77D0F9004254E6 /* AppCoordinator.swift */,
 				9CC9330E1F7813C8004254E6 /* TabCoordinator.swift */,
 			);
 			path = Coodinator;
@@ -276,9 +266,9 @@
 		9CC932CC1F77DF41004254E6 /* MainTab */ = {
 			isa = PBXGroup;
 			children = (
+				9C6B5F841F62F4980059EB36 /* Main.storyboard */,
 				9CC932BE1F77CEAC004254E6 /* MainTabCoordinator.swift */,
-				9C6B5FBB1F62F51F0059EB36 /* MainViewController */,
-				9CC932C91F77DC50004254E6 /* SecondViewController */,
+				9CD5467D1F79215A00AB3D7C /* View Controllers */,
 			);
 			path = MainTab;
 			sourceTree = "<group>";
@@ -286,8 +276,9 @@
 		9CC933101F781915004254E6 /* PurchaseTab */ = {
 			isa = PBXGroup;
 			children = (
+				9CC933111F781A77004254E6 /* Purchase.storyboard */,
 				9CC933181F781ADE004254E6 /* PurchaseTabCoordinator.swift */,
-				9CC933131F781A85004254E6 /* SelectItemViewController */,
+				9CD5467C1F79214E00AB3D7C /* View Controllers */,
 			);
 			path = PurchaseTab;
 			sourceTree = "<group>";
@@ -299,6 +290,23 @@
 				9CC933161F781AA4004254E6 /* SelectItemViewController.swift */,
 			);
 			path = SelectItemViewController;
+			sourceTree = "<group>";
+		};
+		9CD5467C1F79214E00AB3D7C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CC933131F781A85004254E6 /* SelectItemViewController */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		9CD5467D1F79215A00AB3D7C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C6B5FBB1F62F51F0059EB36 /* MainViewController */,
+				9CC932C91F77DC50004254E6 /* SecondViewController */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
