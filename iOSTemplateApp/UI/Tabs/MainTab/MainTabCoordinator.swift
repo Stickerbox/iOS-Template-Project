@@ -14,7 +14,7 @@ class MainTabCoordinator: RootTabCoordinator {
     var tabBarItem: UITabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
     
     init() {
-        let main: MainViewController = storyboard.instantiate()
+        let main: MainViewController = storyboard.inflate()
         main.viewModel = MainViewModel()
         
         rootController = UINavigationController(rootViewController: main)
@@ -24,9 +24,13 @@ class MainTabCoordinator: RootTabCoordinator {
             self.showSecondViewController()
         }
     }
+}
+
+// MARK:
+extension MainTabCoordinator {
     
     func showSecondViewController() {
-        let secondVC: SecondViewController = storyboard.instantiate()
+        let secondVC: SecondViewController = storyboard.inflate()
         self.rootController.pushViewController(secondVC, animated: true)
     }
 }

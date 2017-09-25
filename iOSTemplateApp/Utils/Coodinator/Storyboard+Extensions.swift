@@ -15,7 +15,7 @@ extension UIStoryboard {
         self.init(name: name.rawValue, bundle: nil)
     }
     
-    func instantiate<T: UIViewController>() -> T {
+    func inflate<T: UIViewController>() -> T {
         if let name = NSStringFromClass(T.self).components(separatedBy: ".").last,
             let vc = instantiateViewController(withIdentifier: name) as? T {
             return vc
