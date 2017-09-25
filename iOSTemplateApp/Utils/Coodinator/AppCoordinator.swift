@@ -8,11 +8,15 @@ class AppCoordinator {
     
     var tabBarController: UITabBarController
     var tabs: [AnyTabCoordinator]
-
+    var window: UIWindow?
+    
     // MARK: - Init
     
-    public init(tabBarController: UITabBarController) {
+    public init(window: UIWindow?, tabBarController: UITabBarController) {
         self.tabBarController = tabBarController
+        self.window = window
+        
+        window?.rootViewController = tabBarController
         
         let tabs = [MainTabCoordinator().deGenerisized,
                     PurchaseTabCoordinator().deGenerisized]
@@ -25,6 +29,7 @@ class AppCoordinator {
     /// Starts the coordinator
     public func start() {
         tabBarController.viewControllers = tabs.map { $0.rootController }
+        window?.makeKeyAndVisible()
     }
 
 }
