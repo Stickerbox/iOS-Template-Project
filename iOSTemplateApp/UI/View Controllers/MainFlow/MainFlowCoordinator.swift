@@ -6,7 +6,7 @@ import UIKit
 
 class MainFlowCoordinator: RootViewCoordinator {
     
-    let storyboard: UIStoryboard? = UIStoryboard(.main)
+    let storyboard: UIStoryboard = UIStoryboard(.main)
     
     private lazy var navigationController: UINavigationController = {
         let navigationController = UINavigationController()
@@ -20,7 +20,7 @@ class MainFlowCoordinator: RootViewCoordinator {
     }
     
     func start() {
-        guard let main = storyboard?.instantiateViewController(withIdentifier: .mainViewController) as? MainViewController else { return }
+        let main: MainViewController = storyboard.instantiate()
         main.viewModel = MainViewModel()
         
         main.finishedBlock = { [weak self] in
@@ -31,7 +31,7 @@ class MainFlowCoordinator: RootViewCoordinator {
     }
     
     func presentSecondViewController() {
-        guard let second = storyboard?.instantiateViewController(withIdentifier: .secondViewController) as? SecondViewController else { return }        
+        let second: SecondViewController = storyboard.instantiate()
         self.navigationController.pushViewController(second, animated: true)
     }
     

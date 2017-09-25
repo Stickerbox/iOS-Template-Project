@@ -6,7 +6,7 @@ import UIKit
 
 class AppCoordinator: RootViewCoordinator {
     
-    var storyboard: UIStoryboard? = nil
+    var storyboard: UIStoryboard = UIStoryboard()
     
     var childCoordinators: [Coordinator] = []
     

@@ -8,19 +8,17 @@ enum Storyboard: String {
     case main = "Main"
 }
 
-enum MainStoryboardViewController: String {
-    case mainViewController = "MainViewController"
-    case secondViewController = "SecondViewController"
-}
-
 extension UIStoryboard {
     
     convenience init(_ name: Storyboard) {
         self.init(name: name.rawValue, bundle: nil)
     }
     
-    func instantiateViewController(withIdentifier identifier: MainStoryboardViewController) -> UIViewController? {
-        return self.instantiateViewController(withIdentifier: identifier.rawValue)
+    func instantiate<T: UIViewController>() -> T {
+        if let name = NSStringFromClass(T.self).components(separatedBy: ".").last,
+            let vc = instantiateViewController(withIdentifier: name) as? T {
+            return vc
+        }
+        fatalError("Could not find " + String(describing: T.self) + ". Perhaps you need to add the class name to the StoryboardID for that UIViewController in IB?")
     }
-    
 }
