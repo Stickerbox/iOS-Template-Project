@@ -211,8 +211,8 @@
 		9C6B5FB91F62F5050059EB36 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9CC933101F781915004254E6 /* PurchaseFlow */,
-				9CC932CC1F77DF41004254E6 /* MainFlow */,
+				9CC933101F781915004254E6 /* PurchaseTab */,
+				9CC932CC1F77DF41004254E6 /* MainTab */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -273,23 +273,23 @@
 			path = SecondViewController;
 			sourceTree = "<group>";
 		};
-		9CC932CC1F77DF41004254E6 /* MainFlow */ = {
+		9CC932CC1F77DF41004254E6 /* MainTab */ = {
 			isa = PBXGroup;
 			children = (
 				9CC932BE1F77CEAC004254E6 /* MainTabCoordinator.swift */,
 				9C6B5FBB1F62F51F0059EB36 /* MainViewController */,
 				9CC932C91F77DC50004254E6 /* SecondViewController */,
 			);
-			path = MainFlow;
+			path = MainTab;
 			sourceTree = "<group>";
 		};
-		9CC933101F781915004254E6 /* PurchaseFlow */ = {
+		9CC933101F781915004254E6 /* PurchaseTab */ = {
 			isa = PBXGroup;
 			children = (
 				9CC933181F781ADE004254E6 /* PurchaseTabCoordinator.swift */,
 				9CC933131F781A85004254E6 /* SelectItemViewController */,
 			);
-			path = PurchaseFlow;
+			path = PurchaseTab;
 			sourceTree = "<group>";
 		};
 		9CC933131F781A85004254E6 /* SelectItemViewController */ = {

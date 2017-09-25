@@ -4,7 +4,9 @@
 
 import UIKit
 
-class MainTabCoordinator: TabCoordinator {
+class MainTabCoordinator: RootTabCoordinator {
+    
+    var childCoordinators: [Coordinator] = []
     
     let storyboard = UIStoryboard(.main)
     

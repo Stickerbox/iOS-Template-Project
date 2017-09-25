@@ -17,6 +17,8 @@ extension TabCoordinator {
     }
 }
 
+typealias RootTabCoordinator = TabCoordinator & Coordinator
+
 class AnyTabCoordinator {
     var rootController: UIViewController
     var tabBarItem: UITabBarItem

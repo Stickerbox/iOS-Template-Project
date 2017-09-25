@@ -4,7 +4,9 @@
 
 import UIKit
 
-class PurchaseTabCoordinator: TabCoordinator {
+class PurchaseTabCoordinator: RootTabCoordinator {
+    
+    var childCoordinators: [Coordinator] = []
     
     let storyboard = UIStoryboard(.purchase)
     
