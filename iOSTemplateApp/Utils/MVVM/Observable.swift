@@ -8,15 +8,22 @@ class Observable<T> {
     
     typealias Observer = (T) -> Void
     var observer: Observer?
+    var reactor: (() -> Void)?
     
     func observe(_ observer: Observer?) {
         self.observer = observer
         observer?(value)
     }
     
+    func observe(_ reactor: (() -> Void)?) {
+        self.reactor = reactor
+        reactor?()
+    }
+    
     var value: T {
         didSet {
             observer?(value)
+            reactor?()
         }
     }
     

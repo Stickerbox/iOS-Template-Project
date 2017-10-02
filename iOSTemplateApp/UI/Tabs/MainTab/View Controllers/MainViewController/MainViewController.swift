@@ -9,12 +9,6 @@ class MainViewController: UIViewController {
     var viewModel: MainViewModelConformable!
     var finishedBlock: (() -> Void)?
     
-    var tableViewData: [User]? {
-        didSet {
-            tableView.reloadData()
-        }
-    }
-    
     @IBOutlet var tableView: UITableView!
     @IBOutlet var progressLabel: UILabel!
 
@@ -27,7 +21,7 @@ class MainViewController: UIViewController {
     private func bindView() {
         
         viewModel.progressText.observe { [weak self] in self?.progressLabel.text = $0 }
-        viewModel.users.observe { [weak self] in self?.tableViewData = $0 }
+        viewModel.users.observe { [weak self] in self?.tableView.reloadData() }
     }
 
 }
@@ -38,12 +32,12 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.reuseID) as! MainTableViewCell
-        cell.populate(from: tableViewData?[indexPath.row])
+        cell.populate(from: viewModel.users.value?[indexPath.row])
         return cell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tableViewData?.count ?? 0
+        return viewModel.users.value?.count ?? 0
     }
 }
 
