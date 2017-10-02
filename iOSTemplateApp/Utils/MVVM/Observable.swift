@@ -7,15 +7,16 @@ import Foundation
 class Observable<T> {
     
     typealias Observer = (T) -> Void
+    typealias Reactor = () -> Void
     var observer: Observer?
-    var reactor: (() -> Void)?
+    var reactor: Reactor?
     
     func observe(_ observer: Observer?) {
         self.observer = observer
         observer?(value)
     }
     
-    func observe(_ reactor: (() -> Void)?) {
+    func observe(_ reactor: Reactor?) {
         self.reactor = reactor
         reactor?()
     }
