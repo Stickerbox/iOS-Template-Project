@@ -10,12 +10,5 @@ import UIKit
 
 protocol Injectable {
     associatedtype Dependencies
-    var dependencies: Dependencies! { get }
-}
-
-extension Injectable where Self: UIViewController {
-    
-    static func inject<T: UIViewController>(with dependencies: Dependencies) -> T {
-        return T()
-    }
+    var dependencies: Dependencies! { get set }
 }

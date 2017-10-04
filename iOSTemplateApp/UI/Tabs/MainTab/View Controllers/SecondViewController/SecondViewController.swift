@@ -8,7 +8,10 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, Injectable {
+    
+    typealias Dependencies = HasSecondViewModel
+    var dependencies: HasSecondViewModel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

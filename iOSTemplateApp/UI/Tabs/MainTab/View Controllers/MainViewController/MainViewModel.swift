@@ -5,7 +5,7 @@
 import Foundation
 
 protocol HasMainViewModel {
-    var viewModel: MainViewModelConformable { get }
+    var mainViewModel: MainViewModelConformable { get }
 }
 
 protocol MainViewModelConformable {

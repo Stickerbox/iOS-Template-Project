@@ -21,6 +21,8 @@
 		9C70D7A71F62F97A00FD788C /* ExampleGetConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C70D7A61F62F97A00FD788C /* ExampleGetConfiguration.swift */; };
 		9C70D7A81F62FA1500FD788C /* WebServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B5FB61F62F4C50059EB36 /* WebServiceConfiguration.swift */; };
 		9C70D7AC1F62FE3E00FD788C /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C70D7AB1F62FE3E00FD788C /* MainTableViewCell.swift */; };
+		9CBD98451F853B7300EA9C93 /* MainTabModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD98441F853B7300EA9C93 /* MainTabModule.swift */; };
+		9CBD98471F853ECB00EA9C93 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD98461F853ECB00EA9C93 /* SecondViewModel.swift */; };
 		9CC932BF1F77CEAC004254E6 /* MainTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC932BE1F77CEAC004254E6 /* MainTabCoordinator.swift */; };
 		9CC932C11F77D0F9004254E6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC932C01F77D0F9004254E6 /* AppCoordinator.swift */; };
 		9CC932C41F77D12D004254E6 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC932C31F77D12D004254E6 /* CoordinatorProtocol.swift */; };
@@ -71,6 +73,8 @@
 		9C70D7A51F62F70200FD788C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C70D7A61F62F97A00FD788C /* ExampleGetConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleGetConfiguration.swift; sourceTree = "<group>"; };
 		9C70D7AB1F62FE3E00FD788C /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		9CBD98441F853B7300EA9C93 /* MainTabModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabModule.swift; sourceTree = "<group>"; };
+		9CBD98461F853ECB00EA9C93 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
 		9CC932BE1F77CEAC004254E6 /* MainTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCoordinator.swift; sourceTree = "<group>"; };
 		9CC932C01F77D0F9004254E6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		9CC932C31F77D12D004254E6 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CoordinatorProtocol.swift; path = ../MVVM/Coodinator/CoordinatorProtocol.swift; sourceTree = "<group>"; };
@@ -272,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				9CC932CA1F77DC5F004254E6 /* SecondViewController.swift */,
+				9CBD98461F853ECB00EA9C93 /* SecondViewModel.swift */,
 			);
 			path = SecondViewController;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 			children = (
 				9C6B5F841F62F4980059EB36 /* Main.storyboard */,
 				9CC932BE1F77CEAC004254E6 /* MainTabCoordinator.swift */,
+				9CBD98441F853B7300EA9C93 /* MainTabModule.swift */,
 				9CD5467D1F79215A00AB3D7C /* View Controllers */,
 			);
 			path = MainTab;
@@ -462,6 +468,7 @@
 				9C6B5F831F62F4980059EB36 /* MainViewController.swift in Sources */,
 				9CC932C81F77D4F4004254E6 /* Storyboard+Extensions.swift in Sources */,
 				9CC933171F781AA4004254E6 /* SelectItemViewController.swift in Sources */,
+				9CBD98471F853ECB00EA9C93 /* SecondViewModel.swift in Sources */,
 				9C6B5F811F62F4980059EB36 /* AppDelegate.swift in Sources */,
 				9CC9330F1F7813C8004254E6 /* TabCoordinator.swift in Sources */,
 				9CC932C41F77D12D004254E6 /* CoordinatorProtocol.swift in Sources */,
@@ -470,6 +477,7 @@
 				9C70D79E1F62F57C00FD788C /* MainViewModel.swift in Sources */,
 				9CC933191F781ADE004254E6 /* PurchaseTabCoordinator.swift in Sources */,
 				9C70D7A71F62F97A00FD788C /* ExampleGetConfiguration.swift in Sources */,
+				9CBD98451F853B7300EA9C93 /* MainTabModule.swift in Sources */,
 				9C0040871F851EA1009B985E /* Injectable.swift in Sources */,
 				9C70D7A01F62F5C800FD788C /* Observable.swift in Sources */,
 			);
