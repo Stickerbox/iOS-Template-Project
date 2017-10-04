@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C0040871F851EA1009B985E /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0040861F851EA1009B985E /* Injectable.swift */; };
 		9C6B5F811F62F4980059EB36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B5F801F62F4980059EB36 /* AppDelegate.swift */; };
 		9C6B5F831F62F4980059EB36 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B5F821F62F4980059EB36 /* MainViewController.swift */; };
 		9C6B5F861F62F4980059EB36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6B5F841F62F4980059EB36 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C0040861F851EA1009B985E /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injectable.swift; sourceTree = "<group>"; };
 		9C6B5F7D1F62F4980059EB36 /* iOSTemplateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTemplateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6B5F801F62F4980059EB36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C6B5F821F62F4980059EB36 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				9CC932C31F77D12D004254E6 /* CoordinatorProtocol.swift */,
 				9CC932C71F77D4F4004254E6 /* Storyboard+Extensions.swift */,
 				9CC9330E1F7813C8004254E6 /* TabCoordinator.swift */,
+				9C0040861F851EA1009B985E /* Injectable.swift */,
 			);
 			name = Coodinator;
 			path = ..;
@@ -467,6 +470,7 @@
 				9C70D79E1F62F57C00FD788C /* MainViewModel.swift in Sources */,
 				9CC933191F781ADE004254E6 /* PurchaseTabCoordinator.swift in Sources */,
 				9C70D7A71F62F97A00FD788C /* ExampleGetConfiguration.swift in Sources */,
+				9C0040871F851EA1009B985E /* Injectable.swift in Sources */,
 				9C70D7A01F62F5C800FD788C /* Observable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

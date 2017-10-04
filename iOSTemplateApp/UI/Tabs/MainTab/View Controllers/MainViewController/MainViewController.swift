@@ -4,7 +4,10 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, Injectable {
+    
+    typealias Dependencies = HasMainViewModel
+    var dependencies: HasMainViewModel!
     
     var viewModel: MainViewModelConformable!
     var finishedBlock: (() -> Void)?

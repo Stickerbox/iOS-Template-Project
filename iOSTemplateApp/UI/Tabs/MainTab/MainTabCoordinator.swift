@@ -4,6 +4,10 @@
 
 import UIKit
 
+struct MainDependencies: HasMainViewModel {
+    var viewModel: MainViewModelConformable
+}
+
 class MainTabCoordinator: RootTabCoordinator {
     
     var childCoordinators: [Coordinator] = []
@@ -13,9 +17,13 @@ class MainTabCoordinator: RootTabCoordinator {
     var rootController: UINavigationController
     var tabBarItem: UITabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
     
+    var dependencies = MainDependencies(viewModel: MainViewModel())
+    
     init() {
-        let main: MainViewController = storyboard.inflateVC()
-        main.viewModel = MainViewModel()
+        
+        let main = MainViewController.inject(with: dependencies)
+//        let main: MainViewController = storyboard.inflateVC()
+//        main.viewModel = MainViewModel()
         
         rootController = UINavigationController(rootViewController: main)
         rootController.tabBarItem = tabBarItem

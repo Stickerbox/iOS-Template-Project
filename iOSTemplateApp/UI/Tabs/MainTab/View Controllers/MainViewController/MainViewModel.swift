@@ -4,6 +4,10 @@
 
 import Foundation
 
+protocol HasMainViewModel {
+    var viewModel: MainViewModelConformable { get }
+}
+
 protocol MainViewModelConformable {
     var users: Observable<[User]?> { get }
     var progressText: Observable<String> { get }
