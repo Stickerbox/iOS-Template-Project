@@ -11,7 +11,7 @@ class MainViewController: UIViewController, Injectable {
     
     lazy var viewModel = dependencies.mainViewModel
     
-    var finishedBlock: (() -> Void)?
+    var finished: (() -> Void)?
     
     @IBOutlet var tableView: UITableView!
     @IBOutlet var progressLabel: UILabel!
@@ -57,6 +57,6 @@ extension MainViewController {
     }
     
     @IBAction func segue() {
-        finishedBlock?()
+        finished?()
     }
 }

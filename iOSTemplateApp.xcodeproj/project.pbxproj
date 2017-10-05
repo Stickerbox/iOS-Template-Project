@@ -29,6 +29,7 @@
 		9C72FF1E1F8669CE00593D0A /* BookmarksTabModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72FF1D1F8669CE00593D0A /* BookmarksTabModule.swift */; };
 		9C72FF221F866A4F00593D0A /* ViewBookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72FF211F866A4F00593D0A /* ViewBookmarksViewController.swift */; };
 		9C72FF241F866A7400593D0A /* ViewBookmarksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72FF231F866A7400593D0A /* ViewBookmarksViewModel.swift */; };
+		9C72FF261F866E5600593D0A /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72FF251F866E5600593D0A /* ViewCoordinator.swift */; };
 		9CBD98451F853B7300EA9C93 /* MainTabModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD98441F853B7300EA9C93 /* MainTabModule.swift */; };
 		9CBD98471F853ECB00EA9C93 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD98461F853ECB00EA9C93 /* SecondViewModel.swift */; };
 		9CC932BF1F77CEAC004254E6 /* MainTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC932BE1F77CEAC004254E6 /* MainTabCoordinator.swift */; };
@@ -88,6 +89,7 @@
 		9C72FF1D1F8669CE00593D0A /* BookmarksTabModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTabModule.swift; sourceTree = "<group>"; };
 		9C72FF211F866A4F00593D0A /* ViewBookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBookmarksViewController.swift; sourceTree = "<group>"; };
 		9C72FF231F866A7400593D0A /* ViewBookmarksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBookmarksViewModel.swift; sourceTree = "<group>"; };
+		9C72FF251F866E5600593D0A /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
 		9CBD98441F853B7300EA9C93 /* MainTabModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabModule.swift; sourceTree = "<group>"; };
 		9CBD98461F853ECB00EA9C93 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
 		9CC932BE1F77CEAC004254E6 /* MainTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabCoordinator.swift; sourceTree = "<group>"; };
@@ -249,9 +251,9 @@
 		9C6B5FB91F62F5050059EB36 /* Tabs */ = {
 			isa = PBXGroup;
 			children = (
-				9C72FF1A1F8669BA00593D0A /* BookmarksTab */,
 				9CC932CC1F77DF41004254E6 /* MainTab */,
 				9CC933101F781915004254E6 /* PurchaseTab */,
+				9C72FF1A1F8669BA00593D0A /* BookmarksTab */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -316,6 +318,7 @@
 				9C72FF111F865B5900593D0A /* StoryboardNames.swift */,
 				9CC932C71F77D4F4004254E6 /* Storyboard+Extensions.swift */,
 				9CC9330E1F7813C8004254E6 /* TabCoordinator.swift */,
+				9C72FF251F866E5600593D0A /* ViewCoordinator.swift */,
 				9C0040861F851EA1009B985E /* Injectable.swift */,
 			);
 			name = Coodinator;
@@ -539,6 +542,7 @@
 				9C35C05C1F8617CB0039F496 /* ThirdViewModel.swift in Sources */,
 				9C70D7A01F62F5C800FD788C /* Observable.swift in Sources */,
 				9C72FF1C1F8669C700593D0A /* BookmarksTabCoordinator.swift in Sources */,
+				9C72FF261F866E5600593D0A /* ViewCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

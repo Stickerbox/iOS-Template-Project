@@ -9,6 +9,7 @@ class PurchaseTabCoordinator: RootTabCoordinator {
     let storyboard = UIStoryboard(.purchase)
     
     var rootController: UINavigationController
+    
     var tabBarItem: UITabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
     
     let dependencies = PurchaseTabModule()
