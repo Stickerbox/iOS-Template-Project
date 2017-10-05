@@ -4,11 +4,6 @@
 
 import UIKit
 
-enum Storyboard: String {
-    case main = "Main"
-    case purchase = "Purchase"
-}
-
 extension UIStoryboard {
     
     convenience init(_ name: Storyboard) {

@@ -6,11 +6,10 @@ import UIKit
 
 class PurchaseTabCoordinator: RootTabCoordinator {
     
-    var childCoordinators: [Coordinator] = []
-    
     let storyboard = UIStoryboard(.purchase)
     
     var rootController: UINavigationController
+    
     var tabBarItem: UITabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 2)
     
     init() {

@@ -19,7 +19,7 @@ extension TabCoordinator {
     }
 }
 
-typealias RootTabCoordinator = TabCoordinator & Coordinator
+typealias RootTabCoordinator = TabCoordinator
 
 class AnyTabCoordinator {
     var rootController: UIViewController
@@ -41,5 +41,5 @@ public protocol RootViewControllerProvider: class {
 }
 
 /// A Coordinator type that provides a root UIViewController
-public typealias RootViewCoordinator = Coordinator & RootViewControllerProvider
+public typealias RootViewCoordinator = RootViewControllerProvider
 

@@ -6,11 +6,10 @@ import UIKit
 
 class MainTabCoordinator: RootTabCoordinator {
     
-    var childCoordinators: [Coordinator] = []
-    
     let storyboard = UIStoryboard(.main)
     
     var rootController: UINavigationController
+    
     var tabBarItem: UITabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
     
     init() {
@@ -20,9 +19,7 @@ class MainTabCoordinator: RootTabCoordinator {
         rootController = UINavigationController(rootViewController: main)
         rootController.tabBarItem = tabBarItem
         
-        main.finishedBlock = {
-            self.showSecondViewController()
-        }
+        main.finishedBlock = { self.showSecondViewController() }
     }
 }
 
