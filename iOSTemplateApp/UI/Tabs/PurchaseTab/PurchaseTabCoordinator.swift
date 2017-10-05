@@ -16,7 +16,7 @@ class PurchaseTabCoordinator: RootTabCoordinator {
     let dependencies = PurchaseTabModule()
     
     init() {
-        let selectViewController: SelectItemViewController = SelectItemViewController.inflate(with: dependencies, from: storyboard)
+        let selectViewController: SelectItemViewController = storyboard.inflateVC(with: dependencies)
         
         rootController = UINavigationController(rootViewController: selectViewController)
         rootController.tabBarItem = tabBarItem

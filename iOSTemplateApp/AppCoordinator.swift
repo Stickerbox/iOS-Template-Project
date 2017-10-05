@@ -17,7 +17,8 @@ class AppCoordinator {
         window?.rootViewController = tabBarController
         
         let tabs = [MainTabCoordinator().deGenerisized,
-                    PurchaseTabCoordinator().deGenerisized]
+                    PurchaseTabCoordinator().deGenerisized,
+                    BookmarksTabCoordinator().deGenerisized]
         
         self.tabs = tabs
     }

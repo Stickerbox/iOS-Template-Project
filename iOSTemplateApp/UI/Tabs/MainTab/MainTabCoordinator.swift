@@ -17,7 +17,7 @@ class MainTabCoordinator: RootTabCoordinator {
     
     init() {
         
-        let main: MainViewController = MainViewController.inflate(with: dependencies, from: storyboard)
+        let main: MainViewController = storyboard.inflateVC(with: dependencies)
         
         rootController = UINavigationController(rootViewController: main)
         rootController.tabBarItem = tabBarItem
@@ -31,7 +31,7 @@ class MainTabCoordinator: RootTabCoordinator {
 extension MainTabCoordinator {
     
     func showSecondViewController() {
-        let secondVC: SecondViewController = SecondViewController.inflate(with: dependencies, from: storyboard)
+        let secondVC: SecondViewController = storyboard.inflateVC(with: dependencies)
         
         secondVC.finished = {
             self.showThird()
@@ -44,7 +44,7 @@ extension MainTabCoordinator {
 extension MainTabCoordinator {
     
     func showThird() {
-        let thirdVC: ThirdViewController = ThirdViewController.inflate(with: dependencies, from: storyboard)
+        let thirdVC: ThirdViewController = storyboard.inflateVC(with: dependencies)
         self.rootController.show(thirdVC, sender: nil)
     }
 }
