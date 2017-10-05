@@ -8,14 +8,14 @@
 
 import Foundation
 
-protocol ViewBookmarksVMProvidable {
-    var viewBookmarksVM: ViewBookmarksVMConformable { get }
+protocol HasViewBookmarksViewModel {
+    var viewBookmarksVM: ViewBookmarksViewModelConformable { get }
 }
 
-protocol ViewBookmarksVMConformable {
+protocol ViewBookmarksViewModelConformable {
     
 }
 
-class ViewBookmarksViewModel: ViewBookmarksVMConformable {
+class ViewBookmarksViewModel: ViewBookmarksViewModelConformable {
     
 }

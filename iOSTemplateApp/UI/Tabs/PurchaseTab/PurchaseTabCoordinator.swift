@@ -6,8 +6,6 @@ import UIKit
 
 class PurchaseTabCoordinator: RootTabCoordinator {
     
-    var childCoordinators: [Coordinator] = []
-    
     let storyboard = UIStoryboard(.purchase)
     
     var rootController: UINavigationController

@@ -6,8 +6,6 @@ import UIKit
 
 class MainTabCoordinator: RootTabCoordinator {
     
-    var childCoordinators: [Coordinator] = []
-    
     let storyboard = UIStoryboard(.main)
     
     var rootController: UINavigationController

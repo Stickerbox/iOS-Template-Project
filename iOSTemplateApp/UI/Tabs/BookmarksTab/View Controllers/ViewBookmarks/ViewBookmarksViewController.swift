@@ -9,8 +9,9 @@
 import UIKit
 
 class ViewBookmarksViewController: UIViewController, Injectable {
-    
-    typealias Dependencies = ViewBookmarksVMProvidable
+
+    typealias Dependencies = HasViewBookmarksViewModel
     var dependencies: Dependencies!
     
 }
+

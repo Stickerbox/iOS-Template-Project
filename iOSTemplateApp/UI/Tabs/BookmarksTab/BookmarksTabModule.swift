@@ -8,10 +8,9 @@
 
 import Foundation
 
-class BookmarksTabModule: Module, ViewBookmarksVMProvidable {
+class BookmarksTabModule: Module, HasViewBookmarksViewModel {
     
-    var viewBookmarksVM: ViewBookmarksVMConformable {
+    var viewBookmarksVM: ViewBookmarksViewModelConformable {
         return ViewBookmarksViewModel()
     }
-    
 }

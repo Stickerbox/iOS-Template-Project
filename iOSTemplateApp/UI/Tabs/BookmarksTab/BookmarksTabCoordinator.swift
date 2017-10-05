@@ -10,21 +10,19 @@ import UIKit
 
 class BookmarksTabCoordinator: RootTabCoordinator {
     
-    var childCoordinators: [Coordinator] = []
-    
-    var storyboard = UIStoryboard(.bookmarks)
+    var storyboard: UIStoryboard = UIStoryboard(.bookmarks)
     
     var rootController: UINavigationController
     
-    var tabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 3)
+    var tabBarItem: UITabBarItem = UITabBarItem(tabBarSystemItem: .bookmarks, tag: 3)
     
-    let dependencies = BookmarksTabModule()
+    var dependencies = BookmarksTabModule()
     
     init() {
-        
         let vc: ViewBookmarksViewController = storyboard.inflateVC(with: dependencies)
         
         rootController = UINavigationController(rootViewController: vc)
         rootController.tabBarItem = tabBarItem
     }
+    
 }

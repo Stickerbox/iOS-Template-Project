@@ -28,7 +28,7 @@ protocol DependencyProvidable {
     var dependencies: ProvidableType { get }
 }
 
-typealias RootTabCoordinator = TabCoordinator & Coordinator & DependencyProvidable
+typealias RootTabCoordinator = TabCoordinator & DependencyProvidable
 
 class AnyTabCoordinator {
     var rootController: UIViewController
@@ -50,5 +50,5 @@ public protocol RootViewControllerProvider: class {
 }
 
 /// A Coordinator type that provides a root UIViewController
-typealias RootViewCoordinator = Coordinator & RootViewControllerProvider & DependencyProvidable
+typealias RootViewCoordinator = RootViewControllerProvider & DependencyProvidable
 
