@@ -13,7 +13,7 @@ class MainTabCoordinator: RootTabCoordinator {
     var rootController: UINavigationController
     var tabBarItem: UITabBarItem = UITabBarItem(tabBarSystemItem: .featured, tag: 1)
     
-    var dependencies = MainTabModule()
+    let dependencies = MainTabModule()
     
     init() {
         
@@ -28,7 +28,6 @@ class MainTabCoordinator: RootTabCoordinator {
     }
 }
 
-// MARK: View Controller inflation extensions
 extension MainTabCoordinator {
     
     func showSecondViewController() {

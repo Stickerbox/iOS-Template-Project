@@ -4,13 +4,16 @@
 
 import UIKit
 
-class SelectItemViewController: UIViewController {
+class SelectItemViewController: UIViewController, Injectable {
     
-    var viewModel: SelectItemViewModelConformable!
+    typealias Dependencies = HasSelectItemViewModel
+    var dependencies: Dependencies!
+    
+    lazy var viewModel = dependencies.selectItemViewModel
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
 
 }

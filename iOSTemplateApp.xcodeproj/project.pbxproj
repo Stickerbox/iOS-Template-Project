@@ -10,6 +10,7 @@
 		9C0040871F851EA1009B985E /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0040861F851EA1009B985E /* Injectable.swift */; };
 		9C35C05A1F8617A70039F496 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C35C0591F8617A70039F496 /* ThirdViewController.swift */; };
 		9C35C05C1F8617CB0039F496 /* ThirdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C35C05B1F8617CB0039F496 /* ThirdViewModel.swift */; };
+		9C35C05E1F861D0B0039F496 /* PurchaseTabModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C35C05D1F861D0B0039F496 /* PurchaseTabModule.swift */; };
 		9C6B5F811F62F4980059EB36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B5F801F62F4980059EB36 /* AppDelegate.swift */; };
 		9C6B5F831F62F4980059EB36 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B5F821F62F4980059EB36 /* MainViewController.swift */; };
 		9C6B5F861F62F4980059EB36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6B5F841F62F4980059EB36 /* Main.storyboard */; };
@@ -58,6 +59,7 @@
 		9C0040861F851EA1009B985E /* Injectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Injectable.swift; path = Coodinator/Injectable.swift; sourceTree = "<group>"; };
 		9C35C0591F8617A70039F496 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		9C35C05B1F8617CB0039F496 /* ThirdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewModel.swift; sourceTree = "<group>"; };
+		9C35C05D1F861D0B0039F496 /* PurchaseTabModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseTabModule.swift; sourceTree = "<group>"; };
 		9C6B5F7D1F62F4980059EB36 /* iOSTemplateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTemplateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6B5F801F62F4980059EB36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C6B5F821F62F4980059EB36 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -309,6 +311,7 @@
 			children = (
 				9CC933111F781A77004254E6 /* Purchase.storyboard */,
 				9CC933181F781ADE004254E6 /* PurchaseTabCoordinator.swift */,
+				9C35C05D1F861D0B0039F496 /* PurchaseTabModule.swift */,
 				9CD5467C1F79214E00AB3D7C /* View Controllers */,
 			);
 			path = PurchaseTab;
@@ -334,9 +337,9 @@
 		9CD5467D1F79215A00AB3D7C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9C35C0581F8617960039F496 /* ThirdViewController */,
 				9C6B5FBB1F62F51F0059EB36 /* MainViewController */,
 				9CC932C91F77DC50004254E6 /* SecondViewController */,
+				9C35C0581F8617960039F496 /* ThirdViewController */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -493,6 +496,7 @@
 				9C70D7A71F62F97A00FD788C /* ExampleGetConfiguration.swift in Sources */,
 				9CBD98451F853B7300EA9C93 /* MainTabModule.swift in Sources */,
 				9C0040871F851EA1009B985E /* Injectable.swift in Sources */,
+				9C35C05E1F861D0B0039F496 /* PurchaseTabModule.swift in Sources */,
 				9C35C05C1F8617CB0039F496 /* ThirdViewModel.swift in Sources */,
 				9C70D7A01F62F5C800FD788C /* Observable.swift in Sources */,
 			);

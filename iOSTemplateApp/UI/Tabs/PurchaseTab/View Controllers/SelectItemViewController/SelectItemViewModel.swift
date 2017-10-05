@@ -4,6 +4,10 @@
 
 import Foundation
 
+protocol HasSelectItemViewModel {
+    var selectItemViewModel: SelectItemViewModelConformable { get }
+}
+
 protocol SelectItemViewModelConformable {
     
 }
