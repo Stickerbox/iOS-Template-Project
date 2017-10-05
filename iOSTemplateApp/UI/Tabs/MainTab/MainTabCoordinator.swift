@@ -17,8 +17,7 @@ class MainTabCoordinator: RootTabCoordinator {
     
     init() {
         
-        let main: MainViewController = storyboard.inflateVC()
-        main.dependencies = dependencies
+        let main: MainViewController = MainViewController.inject(with: dependencies, from: storyboard)
         
         rootController = UINavigationController(rootViewController: main)
         rootController.tabBarItem = tabBarItem
@@ -33,8 +32,7 @@ class MainTabCoordinator: RootTabCoordinator {
 extension MainTabCoordinator {
     
     func showSecondViewController() {
-        let secondVC: SecondViewController = storyboard.inflateVC()
-        secondVC.dependencies = dependencies
+        let secondVC: SecondViewController = SecondViewController.inject(with: dependencies, from: storyboard)
         self.rootController.pushViewController(secondVC, animated: true)
     }
 }

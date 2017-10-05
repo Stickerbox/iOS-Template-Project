@@ -6,7 +6,7 @@ import UIKit
 
 class MainViewController: UIViewController, Injectable {
     
-    typealias Dependencies = HasMainViewModel & HasSecondViewModel
+    typealias Dependencies = HasMainViewModel
     var dependencies: Dependencies!
     
     var finishedBlock: (() -> Void)?
@@ -21,7 +21,7 @@ class MainViewController: UIViewController, Injectable {
     }
     
     private func bindView() {
-        
+
         dependencies.mainViewModel.progressText.observe { [weak self] in self?.progressLabel.text = $0 }
         dependencies.mainViewModel.users.observe { [weak self] in self?.tableView.reloadData() }
     }

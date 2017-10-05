@@ -12,3 +12,12 @@ protocol Injectable {
     associatedtype Dependencies
     var dependencies: Dependencies! { get set }
 }
+
+extension Injectable where Self: UIViewController {
+    
+    static func inject(with dependencies: Dependencies, from storyboard: UIStoryboard) -> Self {
+        var vc: Self = storyboard.inflateVC()
+        vc.dependencies = dependencies
+        return vc
+    }
+}
