@@ -9,6 +9,8 @@ class MainViewController: UIViewController, Injectable {
     typealias Dependencies = HasMainViewModel
     var dependencies: Dependencies!
     
+    lazy var viewModel = dependencies.mainViewModel
+    
     var finishedBlock: (() -> Void)?
     
     @IBOutlet var tableView: UITableView!
@@ -22,8 +24,8 @@ class MainViewController: UIViewController, Injectable {
     
     private func bindView() {
 
-        dependencies.mainViewModel.progressText.observe { [weak self] in self?.progressLabel.text = $0 }
-        dependencies.mainViewModel.users.observe { [weak self] in self?.tableView.reloadData() }
+        viewModel.progressText.observe { [weak self] in self?.progressLabel.text = $0 }
+        viewModel.users.observe { [weak self] in self?.tableView.reloadData() }
     }
 
 }
@@ -34,12 +36,12 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: MainTableViewCell.reuseID) as! MainTableViewCell
-        cell.populate(from: dependencies.mainViewModel.users.value?[indexPath.row])
+        cell.populate(from: viewModel.users.value?[indexPath.row])
         return cell
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return dependencies.mainViewModel.users.value?.count ?? 0
+        return viewModel.users.value?.count ?? 0
     }
 }
 
@@ -47,11 +49,11 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
 extension MainViewController {
     
     @IBAction func performRequest() {
-        dependencies.mainViewModel.getUser()
+        viewModel.getUser()
     }
     
     @IBAction func getBadUsers() {
-        dependencies.mainViewModel.getBadUsers()
+        viewModel.getBadUsers()
     }
     
     @IBAction func segue() {

@@ -4,7 +4,7 @@
 
 import UIKit
 
-class MainTabModule: HasMainViewModel, HasSecondViewModel {
+class MainTabModule: HasMainViewModel, HasSecondViewModel, HasThirdViewModel {
     
     var mainViewModel: MainViewModelConformable {
         return MainViewModel()
@@ -12,6 +12,10 @@ class MainTabModule: HasMainViewModel, HasSecondViewModel {
     
     var secondViewModel: SecondViewModelConformable {
         return SecondViewModel()
+    }
+    
+    var thirdViewModel: ThirdViewModelConformable {
+        return ThirdViewModel()
     }
     
 }
