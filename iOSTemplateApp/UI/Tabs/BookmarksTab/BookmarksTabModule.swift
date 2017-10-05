@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BookmarksTabModule: ViewBookmarksVMProvidable {
+class BookmarksTabModule: Module, ViewBookmarksVMProvidable {
     
     var viewBookmarksVM: ViewBookmarksVMConformable {
         return ViewBookmarksViewModel()

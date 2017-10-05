@@ -8,7 +8,7 @@
 
 import Foundation
 
-class PurchaseTabModule: HasSelectItemViewModel {
+class PurchaseTabModule: Module, HasSelectItemViewModel {
     
     var selectItemViewModel: SelectItemViewModelConformable {
         return SelectItemViewModel()
