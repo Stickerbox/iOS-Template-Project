@@ -25,10 +25,6 @@
 		9C70D7A81F62FA1500FD788C /* WebServiceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B5FB61F62F4C50059EB36 /* WebServiceConfiguration.swift */; };
 		9C70D7AC1F62FE3E00FD788C /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C70D7AB1F62FE3E00FD788C /* MainTableViewCell.swift */; };
 		9C72FF121F865B5900593D0A /* StoryboardNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72FF111F865B5900593D0A /* StoryboardNames.swift */; };
-		9C72FF1C1F8669C700593D0A /* BookmarksTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72FF1B1F8669C700593D0A /* BookmarksTabCoordinator.swift */; };
-		9C72FF1E1F8669CE00593D0A /* BookmarksTabModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72FF1D1F8669CE00593D0A /* BookmarksTabModule.swift */; };
-		9C72FF221F866A4F00593D0A /* ViewBookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72FF211F866A4F00593D0A /* ViewBookmarksViewController.swift */; };
-		9C72FF241F866A7400593D0A /* ViewBookmarksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72FF231F866A7400593D0A /* ViewBookmarksViewModel.swift */; };
 		9C72FF261F866E5600593D0A /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72FF251F866E5600593D0A /* ViewCoordinator.swift */; };
 		9CBD98451F853B7300EA9C93 /* MainTabModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD98441F853B7300EA9C93 /* MainTabModule.swift */; };
 		9CBD98471F853ECB00EA9C93 /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CBD98461F853ECB00EA9C93 /* SecondViewModel.swift */; };
@@ -85,10 +81,6 @@
 		9C70D7A61F62F97A00FD788C /* ExampleGetConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleGetConfiguration.swift; sourceTree = "<group>"; };
 		9C70D7AB1F62FE3E00FD788C /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		9C72FF111F865B5900593D0A /* StoryboardNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardNames.swift; sourceTree = "<group>"; };
-		9C72FF1B1F8669C700593D0A /* BookmarksTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTabCoordinator.swift; sourceTree = "<group>"; };
-		9C72FF1D1F8669CE00593D0A /* BookmarksTabModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTabModule.swift; sourceTree = "<group>"; };
-		9C72FF211F866A4F00593D0A /* ViewBookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBookmarksViewController.swift; sourceTree = "<group>"; };
-		9C72FF231F866A7400593D0A /* ViewBookmarksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewBookmarksViewModel.swift; sourceTree = "<group>"; };
 		9C72FF251F866E5600593D0A /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
 		9CBD98441F853B7300EA9C93 /* MainTabModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabModule.swift; sourceTree = "<group>"; };
 		9CBD98461F853ECB00EA9C93 /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
@@ -253,7 +245,6 @@
 			children = (
 				9CC932CC1F77DF41004254E6 /* MainTab */,
 				9CC933101F781915004254E6 /* PurchaseTab */,
-				9C72FF1A1F8669BA00593D0A /* BookmarksTab */,
 			);
 			path = Tabs;
 			sourceTree = "<group>";
@@ -283,33 +274,6 @@
 				9C70D7AB1F62FE3E00FD788C /* MainTableViewCell.swift */,
 			);
 			path = "TableView Cells";
-			sourceTree = "<group>";
-		};
-		9C72FF1A1F8669BA00593D0A /* BookmarksTab */ = {
-			isa = PBXGroup;
-			children = (
-				9C72FF1B1F8669C700593D0A /* BookmarksTabCoordinator.swift */,
-				9C72FF1D1F8669CE00593D0A /* BookmarksTabModule.swift */,
-				9C72FF1F1F866A3E00593D0A /* View Controllers */,
-			);
-			path = BookmarksTab;
-			sourceTree = "<group>";
-		};
-		9C72FF1F1F866A3E00593D0A /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				9C72FF201F866A4400593D0A /* ViewBookmarks */,
-			);
-			path = "View Controllers";
-			sourceTree = "<group>";
-		};
-		9C72FF201F866A4400593D0A /* ViewBookmarks */ = {
-			isa = PBXGroup;
-			children = (
-				9C72FF211F866A4F00593D0A /* ViewBookmarksViewController.swift */,
-				9C72FF231F866A7400593D0A /* ViewBookmarksViewModel.swift */,
-			);
-			path = ViewBookmarks;
 			sourceTree = "<group>";
 		};
 		9CC932C21F77D11C004254E6 /* Coodinator */ = {
@@ -535,13 +499,9 @@
 				9CBD98451F853B7300EA9C93 /* MainTabModule.swift in Sources */,
 				9C0040871F851EA1009B985E /* Injectable.swift in Sources */,
 				9C35C05E1F861D0B0039F496 /* PurchaseTabModule.swift in Sources */,
-				9C72FF1E1F8669CE00593D0A /* BookmarksTabModule.swift in Sources */,
-				9C72FF221F866A4F00593D0A /* ViewBookmarksViewController.swift in Sources */,
-				9C72FF241F866A7400593D0A /* ViewBookmarksViewModel.swift in Sources */,
 				9C72FF121F865B5900593D0A /* StoryboardNames.swift in Sources */,
 				9C35C05C1F8617CB0039F496 /* ThirdViewModel.swift in Sources */,
 				9C70D7A01F62F5C800FD788C /* Observable.swift in Sources */,
-				9C72FF1C1F8669C700593D0A /* BookmarksTabCoordinator.swift in Sources */,
 				9C72FF261F866E5600593D0A /* ViewCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

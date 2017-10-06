@@ -30,7 +30,7 @@ extension MainTabCoordinator {
     func showSecondViewController() {
         let secondVC: SecondViewController = storyboard.inflateVC(with: dependencies)
         
-        secondVC.finished = { self.showThird() }
+        secondVC.finished = { self.showThird(from: secondVC) }
         
         self.rootController.pushViewController(secondVC, animated: true)
     }
@@ -38,8 +38,8 @@ extension MainTabCoordinator {
 
 extension MainTabCoordinator {
     
-    func showThird() {
+    func showThird(from vc: UIViewController) {
         let thirdVC: ThirdViewController = storyboard.inflateVC(with: dependencies)
-        self.rootController.show(thirdVC, sender: nil)
+        vc.present(thirdVC, animated: true, completion: nil)
     }
 }

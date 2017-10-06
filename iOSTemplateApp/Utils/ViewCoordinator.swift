@@ -14,5 +14,4 @@ public protocol RootViewControllerProvider: class {
 }
 
 /// A Coordinator type that provides a root UIViewController
-typealias RootViewCoordinator = RootViewControllerProvider & DependencyProvidable
-
+typealias ChildCoordinator = RootViewControllerProvider & DependencyProvidable
