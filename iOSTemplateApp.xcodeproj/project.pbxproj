@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C63420C1F8775DF00DE09DF /* ChildCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C63420B1F8775DF00DE09DF /* ChildCoordinator.swift */; };
 		9C6B5F811F62F4980059EB36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B5F801F62F4980059EB36 /* AppDelegate.swift */; };
 		9C6B5F831F62F4980059EB36 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6B5F821F62F4980059EB36 /* MainViewController.swift */; };
 		9C6B5F861F62F4980059EB36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C6B5F841F62F4980059EB36 /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9C63420B1F8775DF00DE09DF /* ChildCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildCoordinator.swift; sourceTree = "<group>"; };
 		9C6B5F7D1F62F4980059EB36 /* iOSTemplateApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTemplateApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C6B5F801F62F4980059EB36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C6B5F821F62F4980059EB36 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				9CC932C71F77D4F4004254E6 /* Storyboard+Extensions.swift */,
 				9CC9330E1F7813C8004254E6 /* TabCoordinator.swift */,
 				9C76E5DB1F867187004B1886 /* StoryboardNames.swift */,
+				9C63420B1F8775DF00DE09DF /* ChildCoordinator.swift */,
 			);
 			name = Coodinator;
 			path = ..;
@@ -457,6 +460,7 @@
 				9CC932CB1F77DC5F004254E6 /* SecondViewController.swift in Sources */,
 				9C76E5DC1F867187004B1886 /* StoryboardNames.swift in Sources */,
 				9C6B5F831F62F4980059EB36 /* MainViewController.swift in Sources */,
+				9C63420C1F8775DF00DE09DF /* ChildCoordinator.swift in Sources */,
 				9CC932C81F77D4F4004254E6 /* Storyboard+Extensions.swift in Sources */,
 				9CC933171F781AA4004254E6 /* SelectItemViewController.swift in Sources */,
 				9C6B5F811F62F4980059EB36 /* AppDelegate.swift in Sources */,
