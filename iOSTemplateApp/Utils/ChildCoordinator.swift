@@ -2,7 +2,7 @@
 //  Copyright © 2017 Mubaloo. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 // MARK: ChildCoordinator
 

@@ -14,7 +14,6 @@ class MainTabCoordinator: RootTabCoordinator {
     
     init() {
         let main: MainViewController = storyboard.inflateVC()
-        main.viewModel = MainViewModel()
         
         rootController = UINavigationController(rootViewController: main)
         rootController.tabBarItem = tabBarItem
