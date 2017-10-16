@@ -6,7 +6,7 @@ import UIKit
 
 class SelectItemViewController: UIViewController {
     
-    var viewModel: SelectItemViewModelConformable!
+    var viewModel: SelectItemViewModelConformable = SelectItemViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
